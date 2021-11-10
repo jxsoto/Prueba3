@@ -1,0 +1,39 @@
+
+<ul *ngIf="Region.id==1" >
+    <div>Celsius         Fahreinheit</div>
+    <li *ngFor="let Climareg of ListaClimaVal">
+        <h2 [routerLink]="['/infoClima']" routerLinkActive="router-link-active" >{{Climareg.dia}}</h2>
+        <img src="../../../assets/{{Climareg.imagen}}" alt="../../../assets/{{Climareg.imagen}}">
+        <div>{{Climareg.grados}}°</div>
+        <a>{{Climareg.clima}}</a>
+    </li>    
+</ul>
+<ul *ngIf="Region.id==2" >
+    <div>Celsius         Fahreinheit</div>
+    <li *ngFor="let Climareg of ListaClimaMet">
+        <h2 [routerLink]="['/infoClima']" routerLinkActive="router-link-active" >{{Climareg.dia}}</h2>
+        <img src="../../../assets/{{Climareg.imagen}}" alt="../../../assets/{{Climareg.imagen}}">
+        <div>{{Climareg.grados}}°</div>
+        <a>{{Climareg.clima}}</a>
+        
+        
+    </li>    
+</ul>
+<ul *ngIf="Region.id==3" >
+    <div>Celsius         Fahreinheit</div>
+    <li *ngFor="let Climareg of ListaClimaBio">
+        <h2 [routerLink]="['/infoClima']" routerLinkActive="router-link-active" >{{Climareg.dia}}</h2>
+        <img src="../../../assets/{{Climareg.imagen}}" alt="../../../assets/{{Climareg.imagen}}">
+        <div>{{Climareg.grados}}°</div>
+        <a>{{Climareg.clima}}</a>
+    </li>    
+</ul>
+<ul *ngIf="Region.id==4" >
+    <div>Celsius         Fahreinheit</div>
+    <li *ngFor="let Climareg of ListaClimaAra">
+        <h2 [routerLink]="['/infoClima']" routerLinkActive="router-link-active" >{{Climareg.dia}}</h2>
+        <img src="../../../assets/{{Climareg.imagen}}" alt="../../../assets/{{Climareg.imagen}}">
+        <div>{{Climareg.grados}}°</div>
+        <a>{{Climareg.clima}}</a>
+    </li>    
+</ul>

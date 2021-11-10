@@ -1,0 +1,41 @@
+<ul>
+    <li>
+        <label>Region</label>
+        <select class="form-select" aria-label="Default select example">
+            <option value="1">Valparaiso</option>
+            <option value="2">Metropolitana</option>
+            <option value="3">Bio Bio</option>
+            <option value="4">Araucania</option>
+          </select>
+    </li>
+    <li>
+        <label>Estado de clima</label>
+        <input type="radio" name="estado" value="1" >Soleado
+        <input type="radio" name="estado" value="1" >Nublado
+        <input type="radio" name="estado" value="1" >Lluvioso
+        <input type="radio" name="estado" value="1" >Tormenta
+        
+    </li>
+    <li>
+        <label>Dia</label>
+        <select name="dia">
+            <option>Lunes</option>
+            <option>Martes</option>
+            <option>Miercoles</option>
+            <option>Jueves</option>
+            <option>Viernes</option>
+            <option>Sabado</option>
+            <option>Domingo</option>
+        </select>
+    </li>
+    <li>
+        <label>Temperatura</label>
+        <input type="number">
+    </li>
+    <li>
+        <label>Grados</label>
+        <input type="radio" name="grados" value="1">Celsius
+        <input type="radio" name="grados" value="1">Fahrenheit
+    </li>
+    <button [routerLink]="['/detalleClima',1]" routerLinkActive="router-link-active" >Actualizar</button>
+</ul>
